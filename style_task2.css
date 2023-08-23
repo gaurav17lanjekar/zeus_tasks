@@ -1,0 +1,43 @@
+* {
+  background-color: #ffffcc;
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+  background-color: rgb(153, 0, 0);
+  color: #ffffcc;
+  border-bottom: 12px solid #ac0404;
+  letter-spacing: 15px;
+  font-style: italic;
+}
+h2 {
+  background-color: #006900;
+  color: #fafabb;
+  padding-left: 10px;
+}
+ul {
+  font-style: italic;
+  color: #b31b03;
+}
+a {
+  text-decoration: none;
+}
+.Google {
+  border: 2px rgb(0, 0, 0) dotted;
+  height: 300px;
+}
+h3 {
+  color: grey;
+}
+table {
+  background-color: rgb(202, 198, 198);
+}
+table td {
+  background-color: rgb(202, 198, 198);
+}
+#name {
+  background-color: white;
+}
+#submit {
+  background-color: rgb(211, 208, 208);
+}
