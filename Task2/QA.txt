@@ -1,0 +1,47 @@
+Q1. What is HTML? Give basic structure of the HTML page.
+Answer: HTML, which stands for HyperText Markup Language, is the standard markup language used to create and structure content on the web. It provides a way to define the structure and layout of a web page by using a set of elements and tags.
+Here's a basic structure of an HTML page:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+Here,
+<!DOCTYPE html> defines the document type and version of HTML being used.
+The <html> element is the root element of the HTML document.
+The <head> element contains meta information about the document, such as character encoding, viewport settings, and the title of the page.
+The <body> element contains the visible content of the web page.
+Inside the <body>, there's a <header> containing the main heading and navigation links.
+
+Q2. Difference between inline and block level element.
+ANSWER: Inline and block-level elements in HTML determine how content is displayed. Block-level elements, like <div> and <p>, create distinct blocks on new lines, stack vertically, and can contain both block and inline elements. They often have margins and padding. Inline elements, like <span> and <a>, flow within content horizontally, appearing on the same line, and can only contain other inline elements. They lack vertical margins and padding and are useful for embedding content within text. These behaviors can be adjusted with CSS. Understanding these distinctions is crucial for structuring web content and layouts effectively.
+
+Q3. Explain the different ways in which CSS can be applied to HTML, what is the preferred way and why.
+ANSWER: Inline Styles:
+CSS rules are applied directly within HTML elements using the style attribute. This approach is quick and easy for individual elements but can lead to code duplication and maintenance challenges for larger projects.
+
+Internal Stylesheets:
+CSS is placed within the <style> element in the <head> section of an HTML document. This style applies to the entire HTML file. While it separates CSS from HTML, it can still become unwieldy for large projects.
+
+External Stylesheets:
+CSS is placed in separate .css files and linked to HTML documents using the <link> element in the <head> section. This approach promotes separation of concerns, enhances maintainability, and allows styles to be reused across multiple pages.
+
+Q4. What are different CSS selectors, with example explain Element, Class and Id selectors.
+ANSWER: Element Selector:
+An element selector targets all instances of a specific HTML element type. It applies styles to all occurrences of that element throughout the HTML document.
+Class Selector:
+A class selector targets HTML elements that have a specific class attribute value. It allows you to apply styles to specific elements while keeping the styling separate from the element's semantics.
+ID Selector:
+An ID selector targets a single HTML element with a unique ID attribute value. IDs are meant to be unique within the document, so this selector is often used for styling a specific, standalone element.
