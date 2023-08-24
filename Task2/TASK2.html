@@ -52,7 +52,7 @@
     </table>
     <h3>Some random form</h3>
     <p><b>Note:</b> It looks the part,but won't do anything.</p>
-    <form>
+    <form onclick="return validateForm()">
         <label for="name">Name:</label><br>
         <input type="text" name="name" id="name" placeholder="Your Name"><br><br>
         <label for="comments">Comments:</label><br>
@@ -62,7 +62,28 @@
         <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="Female">
         <label for="female">Female</label><br><br>
-        <button type="button" value="Submit">Submit</button>
+        <input type="submit" value="Submit Query">
     </form>
+    <script>
+        function validateForm() {
+    var name = document.getElementById("name").value;
+    var comment = document.getElementById("comments").value;
+    var male = document.getElementById("male").checked;
+    var female = document.getElementById("female").checked;
+
+    if (name === "" || comment === "") {
+        alert("All fields are compulsory!");
+        if (name === "") {
+            document.getElementById("name").focus();
+        } else {
+            document.getElementById("comment").focus();
+        }
+        return false;
+    } else if (!male && !female) {
+        alert("All fields are compulsory!");
+        return false;
+    }
+}
+    </script>
 </body>
 </html>
