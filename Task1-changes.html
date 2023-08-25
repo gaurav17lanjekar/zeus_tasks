@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MostIntro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .layout {
+        width: 457px;
+        height: 138px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 4px;
+      }
+      .image {
+        width: 130px;
+        height: 130px;
+        display: inline-block;
+        margin-right: 14px;
+      }
+      .content {
+        display: flex;
+            flex-direction: column;
+      }
+      .username {
+        font-weight: bold;
+        font-family: "Roboto";
+        text-emphasis-color: #000000;
+        font-size: 20px;
+        margin: 0%;
+        text-align: left;
+      }
+      .tweet {
+        font-family: "Roboto";
+        font-size: 20px;
+        text-emphasis-color: #000000;
+        font-weight: normal ;
+        display: inline-block;
+        margin-top: 14px;
+        margin-bottom: 24px;
+        width: 319px;
+        table-layout: auto;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+      .number {
+        font-family: "Roboto";
+        font-weight: medium;
+        font-size: 15px;
+        color: #858991;
+        margin-left: 14px;
+        margin-right: 24px;
+      }
+    </style>
+    <title>Icon and Number</title>
+  </head>
+  <body>
+    <div class="layout">
+      <img src="images/mosh.jpg" alt="image_mosh" class="image" />
+      <div class="content">
+        <p class="username">@moshhamedani</p>
+        <p class="tweet">I'd love to teach you HTML/CSS!</p>
+        <div class="container">
+          <img class="icon" src="images/comment.png" alt="Comment" />
+          <span class="number">242</span>
+          <img class="icon" src="images/retweet.jpg" alt="Retweet" />
+          <span class="number">142</span>
+          <img class="icon" src="images/like.png" alt="Like" />
+          <span class="number">2.6k</span>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
