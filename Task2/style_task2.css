@@ -12,7 +12,7 @@ h1 {
 }
 h2 {
   background-color: #006900;
-  color: #fafabb;
+  color: #ffffff;
   padding-left: 10px;
 }
 ul {
@@ -22,9 +22,10 @@ ul {
 a {
   text-decoration: none;
 }
-.Google {
-  border: 2px rgb(0, 0, 0) dotted;
-  height: 300px;
+.container {
+  display: inline-block;
+  position: relative;
+  border: 2px dotted #000; 
 }
 h3 {
   color: grey;
