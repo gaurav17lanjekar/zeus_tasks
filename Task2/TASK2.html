@@ -9,7 +9,7 @@
 <body>
     <h1>My first web page</h1>
     <h2>What this is</h2>
-    <p> Welcome to <i>my first</i> webpage. I created this webpage without the assistance of a webpage editor. Just my little text editor and a keen <b>understanding of html.</b></p>
+    <p> Welcome to <i>my first</i> webpage. I created this webpage without the assistance of a webpage editor. Just my little text editor and a keen <b><i><span style="text-transform:uppercase;">understanding of html.</span></i></b></p>
     <h2>Why this is</h2>
     <ul>
         <li>To learn HTML</li>
@@ -25,8 +25,10 @@
     <h2>ZeusLearning.com</h2>
     <a href="https://www.zeuslearning.com/" target="_blank">This link will open zeuslearning.com in new tab</a>
     <h2>On click of following image navigate to Google.com</h2>
-    <a href="https://www.google.com/" class="Google target="_blank">
+    <div class="container">
+    <a href="https://www.google.com/" class="Google" target="_blank">
     <img src="images/google.png" alt="Google"></a>
+    </div>
     <h3>Some random table</h3>
     <table border="1px">
         <tr>
@@ -51,7 +53,7 @@
         </tr>
     </table>
     <h3>Some random form</h3>
-    <p><b>Note:</b> It looks the part,but won't do anything.</p>
+    <p><b><i>NOTE:</i></b> It looks the part,but won't do anything.</p>
     <form onclick="return validateForm()">
         <label for="name">Name:</label><br>
         <input type="text" name="name" id="name" placeholder="Your Name"><br><br>
@@ -65,7 +67,7 @@
         <input type="submit" value="Submit Query">
     </form>
     <script>
-        function validateForm() {
+    function validateForm() {
     var name = document.getElementById("name").value;
     var comment = document.getElementById("comments").value;
     var male = document.getElementById("male").checked;
