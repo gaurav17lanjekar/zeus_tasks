@@ -207,7 +207,7 @@ html, body {
     right: 30%;
 
   }
-  .dif1{
+  .extra1{
     width: 0px;
     height: 24px;
     border: 1px solid #0000001F;
@@ -244,7 +244,7 @@ html, body {
 .footer > div:nth-child(4){
     font-weight: bold;
 }
-.dif{
+.extra{
     width: 0px;
     height: 24px;
     border: 1px solid #0000001F;
