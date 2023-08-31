@@ -1,0 +1,359 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#EEEEEE;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+}
+.header>.header-background {
+    width: 134px;
+    height: 36px;
+    margin: 9px auto 10px 24px;
+    
+}
+.header {
+    height: 56px;
+    background: black;
+    opacity: 1;
+    background-color: black;
+    z-index: 2;
+  }
+  .header .left {
+    float: left;
+    margin-left: 29px;
+    display: flex;
+    height: 100%;
+  }
+  .header .left .logo-img {
+    height: 25px;
+    align-self: center;
+    width: 100%;
+  }
+  .header .right {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .header .right .navbar {
+    display: flex;
+    font-size: 14px;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 24px;
+  }
+  .header .right .navbar a {
+    color: #3FD28B;
+    text-decoration: none;
+    margin-left: 32px;
+  }
+  .header .right .navbar .active-white {
+    padding: 16px 0;
+    color: white;
+    border-bottom: 4px solid white;
+  }
+  .header .right .icon-link-div {
+    display: flex;
+    height: 100%;
+  }
+
+  .header .right .icon-link-div div {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+  }
+  .header .right .hamburger-icon {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 24px;
+  }
+  .header .right span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    width: 17px;
+    height: 21px;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+    font-size: 12px;
+    background-color: blue;
+    color: white;
+  }
+  .header .right .light-badge {
+    font-size: 8px;
+    background-color: white;
+    color: #222222;
+  }
+
+.dashboard{
+    margin: 24px 24px 0px 24px;
+    background-color: rgba(70, 164, 70, 0.777);
+    display: flex;
+}
+
+.course {
+    height: 32px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.class{
+    height: 32px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course{
+    border-bottom: 5px solid black;
+}
+
+.course > h2, .class > h2 {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.info{
+    display: flex;
+    margin: 12px 12px 0px 12px;
+    padding-bottom: 15px;
+    color: grey;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+}
+
+.info > div {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.info > div > select {
+    border: none;
+    color: rgba(0, 0, 0, 0.735);
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.238);
+    width: 165px;
+    font-size: 17px;
+    margin-left: 8px;
+    margin-right: 30px;
+    margin-top: 9px;
+    background:none;
+    -webkit-appearance:none;
+    appearance:none;
+    background-image: url(images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position-x:right;
+    background-position-y: -2px;
+    outline: none;
+}
+
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.content > div {
+    flex: 35%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.card{
+    background-color: white;
+    padding: 0px 20px 15px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.expired{
+    padding: 0px;
+    margin: 0px;
+    opacity: 1;
+    color: #D80000;
+    font-size: 10px;
+    font-family: Museo Sans 500;
+    position: relative;
+    left:-15px;
+    height: 15px;
+    width:fit-content;
+    padding:2px;
+    margin-bottom:5px;
+    background-color: #FFE4E6;
+}
+.expired-false{
+    background-color: transparent;
+}
+.data{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(231, 226, 226);
+    padding-bottom: 15px;
+}
+.data img{
+ width: 120px;
+ margin-right: 15px;
+}
+.data .values{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.values p{
+    margin:5px 0px 0px 0px;
+}
+
+.values .title{
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+}
+.title img.fav{
+    margin: 0px;
+    float: right;
+    width:10px;
+    height: 10px;
+    transform: scale(3);
+}
+
+.values .small{
+    color: #666666;
+    font-weight: 500;
+    font-size: 12px;
+}
+.small span{
+    color: green;
+}
+.small b{
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
+.values select{
+    font-family: Quicksand;
+    width: 95%;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    border:0px;
+    padding:5px;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+    font-weight: 700;
+}
+.actions{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.actions img{
+    transform: scale(1.2);
+}
+.disabled{
+    opacity: 0.4;
+}
+
+
+
+.totalfooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.totalfooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer{
+    background-color: rgba(128, 128, 128, 0.301);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.msg{
+    height: 18px;
+    font-size: 14px;
+}
+.footer > span {
+    border-left: 1px solid rgba(82, 82, 82, 0.415);
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer > p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    color: rgb(69, 68, 68);
+    margin: 0px;
+}
+
+@media only screen and (max-height: 1050px) {
+    .totalfooter{
+        position:relative;
+    }
+}
+
+
+
+@media only screen and (max-width:800px) {
+    .cnt{
+        display: none;
+    }
+    .dash-btn{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .items > div {
+        margin-right: 30px;
+    }
+    .container-1{
+        width: 700px;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .text > select {
+        width:390px;
+    }
+}
