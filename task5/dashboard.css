@@ -1,0 +1,289 @@
+* {
+  font-family: "Quicksand";
+}
+
+body {
+  margin: 0;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  background-image: url("../img/headerPattern.png");
+  background-color: black;
+  padding-left: 20px;
+  padding-top: 2px;
+  display: flex;
+  color: white;
+}
+
+#profile-photo {
+  width: 30px;
+  border-radius: 50px;
+  border: 1px solid #16c079;
+  margin-bottom: -5px;
+}
+
+.NavBar {
+  list-style-type: none;
+  margin-left: auto;
+  margin-top: 0px;
+  padding-right: 40px;
+  margin-bottom: 15px;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+  color: #16c079;
+  font-family: "Quicksand";
+  font-weight: 700;
+  position: relative;
+  margin-bottom: -15px;
+}
+
+.alert-image {
+  margin-bottom: -9px;
+}
+
+.selected {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+span.count {
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  padding: 2px 7px;
+  border-radius: 51%;
+  color: white;
+  font-size: 11px;
+}
+
+span.profile {
+  color: black;
+  background-color: white;
+  position: absolute;
+  top: 6px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.courses-classes {
+  background-color: #8DDC97;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.courses {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 3px solid black;
+}
+
+.classes {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.pad5 {
+  padding: 0 5px;
+}
+
+#number {
+  font-size: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.textCount {
+  font-size: 15px;
+}
+
+.courseCard {
+  display: flex;
+}
+
+.courseActions {
+  border-top: 1px solid rgb(236, 233, 233);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+  margin-top: 15px;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+}
+
+.courseWrapper {
+  width: 540px;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  padding-bottom: 2px;
+  position: relative;
+}
+
+.courseDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex: 1;
+}
+
+.courseName {
+  font-weight: 700;
+  margin-top: -8px;
+  flex: 1;
+  font-size: large;
+}
+
+.subjectGrade {
+  margin-top: -8px;
+  font-size: small;
+}
+
+.greencolor {
+  color: #046b40;
+}
+
+.sylabus {
+  margin-top: -8px;
+  font-size: small;
+}
+
+.teacher {
+  border-style: none;
+  border-bottom: black 1px solid;
+  max-width: 400px;
+  font-weight: 700;
+  font-size: large;
+  flex-grow: 1;
+}
+
+.Scount-Date {
+  margin-top: 2px;
+  font-size: small;
+}
+
+.star {
+  float: right;
+  position: absolute;
+  top: 11px;
+  right: 14px;
+}
+
+.footerfont {
+  font-family: "Quicksand";
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.footer-name {
+  font-family: "Quicksand";
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #E0E1E1;
+}
+
+.About {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.greencolorFoot {
+  color: #1F7A54;
+  padding: 0 10px;
+  font-family: "Quicksand";
+  font-weight: 600;
+}
+
+.expired {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 10px;
+  color: red;
+  font-weight: 700;
+  background-color: rgb(255, 213, 213);
+  padding: 2px;
+}
+
+.textC {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  border-bottom: grey 1px solid;
+  align-items: end;
+  flex: 1;
+}
+
+.sort {
+  padding: 15px;
+}
+
+.sortDropdown {
+  border: none;
+  border-bottom: 1px solid grey;
+  background: none;
+  width: 170px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.sortImage {
+  padding: 0 5px;
+}
+
+.nav {
+  display: flex;
+  align-items: end;
+}
+
+.navIcons {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+}
+
+.ham {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .ham {
+    display: block;
+  }
+  .topNav {
+    display: none;
+  }
+  .header {
+    border-bottom: 2px solid rgb(0, 227, 243);
+  }
+}/*# sourceMappingURL=dashboard.css.map */
