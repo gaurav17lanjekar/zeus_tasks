@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/quantum-dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <script src="courses.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="" id="logo"> <img src="images/logo used in header.svg" alt="Quantum Logo"></a>
+        <ul class="NavBar">
+            <div class="nav">
+                <div class="topNav">
+                    <li class="selected"><a href="">DASHBOARD</a></li>
+                    <li><a href="">CONTENT</a></li>
+                    <li><a href="">USERS </a> </li>
+                    <li><a href="">REPORTS </a> </li>
+                    <li><a href="">ADMIN </a> </li>
+                </div>
+                <div class="navIcons">
+                    <li class="alert-image"><img src="images/alerts.svg" class="alert-image" alt=""><span class="count">2</span> </li>
+                    <li><img src="images/announcements.svg" alt=""><span class="count">1</span> </li>
+                    <li><img id="profile-photo" src="images/mosh.jpg" alt=""><span class="profile">T</span> </li>
+                    <li class="ham"><img src="images/hamburger-menu.svg" alt=""></li>
+                </div>
+            </div>
+        </ul>
+        
+    </div>
+    <div class="courses-classes">
+        <div class="courses">
+            <img class="pad5" src="images/courses.svg" alt="">
+            <p class="course-c pad5" id="number">4</p>
+            <p class="course pad5">Courses</p>
+        </div>
+        <div class="classes">
+            <img class="classimage pad5" src="images/classes.svg" alt="">
+            <p class="class-c pad5" id="number">4</p>
+            <p class="course pad5">Classes</p>
+        </div>
+    </div>
+    <div class="textC">
+
+        <p class="textCount">Showing 4 of 4 courses</p>
+        <span class="sort">
+            <label for="state" class="textCount">Sort By</label>
+            <select class="sortDropdown" value="state" name="state">
+                <option value="s1">Course Name</option>
+                <option value="s1">Course Id</option>
+                <option value="s1">Teacher</option>
+            </select>
+            <img class="sortImage" src="images/sort.svg" alt="">
+        </span>
+    </div>
+    <div class="course-container">
+        <div class="courseWrapper">
+            <div class="courseCard">
+                <span class="star"><img src="images/favourite.svg" alt=""></span>
+                <img src="images/imageMask-1.svg" alt="">
+                <div class="courseDetails">
+                    <p class="courseName">Acceleration</p>
+                    <p class="subjectGrade">Physics | <b> Grade 7</b><span class="greencolor"> +2</span></p>
+                    <p class="sylabus"><b>4</b> Units <b>18</b> Lessons <b>24</b> Topics</p>
+                    <select class="teacher" value="state" name="state">
+                        <option value="s1">Mr. Frank's Class B</option>
+                        <option value="s1">Mr. Frank's Class A</option>
+                        <option value="s1">Mr. Json's Class A</option>
+                    </select>
+                    <p class="Scount-Date"><span class="studentCount">50</span> Students | <span
+                            class="dateFrom">21-Jan-2020</span> - <span class="dateTo">21-Aug-2020</span></p>
+                </div>
+
+
+            </div>
+            <div class="courseActions">
+                <img src="images/preview.svg" alt="">
+                <img src="images/manage course.svg" alt="">
+                <img src="images/grade submissions.svg" alt="">
+                <img src="images/reports.svg" alt="">
+
+            </div>
+
+        </div>
+
+        <div class="courseWrapper">
+            <div class="courseCard">
+                <span class="star"><img src="images/favourite.svg" alt=""></span>
+                <img src="images/imageMask-2.svg" alt="">
+                <div class="courseDetails">
+                    <p class="courseName">Displacement, Velocity and Speed</p>
+                    <p class="subjectGrade">Physics 2 | <b> Grade 6</b><span class="greencolor"> +3</span></p>
+                    <p class="sylabus"><b>2</b> Units <b>15</b> Lessons <b>20</b> Topics</p>
+                    <select class="teacher" value="state" name="state">
+                        <option value="s1">No Class</option>
+                    </select>
+                    <p class="Scount-Date"><span class="studentCount"></span><span class="dateFrom"></span><span
+                            class="dateTo"></span></p>
+
+
+                </div>
+
+
+            </div>
+            <div class="courseActions">
+                <img src="images/preview.svg" alt="">
+                <img class="blured" src="images/manage course.svg" alt="">
+                <img class="blured" src="images/grade submissions.svg" alt="">
+                <img src="images/reports.svg" alt="">
+
+            </div>
+        </div>
+        <div class="courseWrapper">
+            <div class="courseCard">
+                <span class="star"><img src="images/favourite.svg" alt=""></span>
+                <img src="images/imageMask-3.png" alt="">
+                <div class="courseDetails">
+                    <p class="courseName">Introduction to Biology: Micro organisms and how they affec...</p>
+                    <p class="subjectGrade">Biology | <b> Grade 4</b><span class="greencolor"> +1</span></p>
+                    <p class="sylabus"><b>5</b> Units <b>16</b> Lessons <b>22</b> Topics</p>
+                    <select class="teacher" value="state" name="state">
+                        <option value="s1">All Classes</option>
+                        <option value="s1">Mr. Json's Class A</option>
+                    </select>
+                    <p class="Scount-Date"><span class="studentCount">300</span> Students<span class="dateFrom"></span>
+                        <span class="dateTo"></span></p>
+                </div>
+
+
+            </div>
+            <div class="courseActions">
+                <img src="images/preview.svg" alt="">
+                <img class="blured" src="images/manage course.svg" alt="">
+                <img class="blured" src="images/grade submissions.svg" alt="">
+                <img src="images/reports.svg" alt="">
+            </div>
+        </div>
+        <div class="courseWrapper">
+            <div class="courseCard">
+                <span class="star"><img src="images/not-favourite.svg" alt=""></span>
+                <span class="expired">EXPIRED</span>
+                <img src="images/imageMask-3.svg" alt="">
+                <div class="courseDetails">
+                    <p class="courseName">Introduction to High School Mathematics</p>
+                    <p class="subjectGrade">Mathematics | <b> Grade 8</b><span class="greencolor"> +3</span></p>
+                    <p class="sylabus"><b>4</b> Units <b>18</b> Lessons <b>24</b> Topics</p>
+                    <select class="teacher" value="state" name="state">
+                        <option value="s1">Mr. Frank's Class A</option>
+                        <option value="s1">Mr. Frank's Class B</option>
+                        <option value="s1">Mr. Json's Class A</option>
+                    </select>
+                    <p class="Scount-Date"><span class="studentCount">44</span> Students | <span
+                            class="dateFrom">14-Oct-2019</span> - <span class="dateTo">20-Oct-2020</span></p>
+                </div>
+
+
+            </div>
+            <div class="courseActions">
+                <img src="images/preview.svg" alt="">
+                <img src="images/manage course.svg" alt="">
+                <img src="images/grade submissions.svg" alt="">
+                <img src="images/reports.svg" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="About">
+        <a href=""><p class="abbout greencolorFoot">About</p></a>
+        <p class="line">|</p>
+        <a href=""><p class="contact greencolorFoot">Contact Us</p></a>
+    </div>
+    <footer>
+
+        <div class="footer">
+            <img src="images/logo used in footer.svg" alt="">
+            <p class="line footerfont">|</p>
+            <p class="Copyright footerfont">Copyright &#169; 2020-2021</p>
+            <p class="footer-name ">Zeus Systems Pvt.LTD</p>
+            <p class="ATR footerfont">All rights reserved.</p>
+</div>
+    </footer>
+</body>
+
+</html>
