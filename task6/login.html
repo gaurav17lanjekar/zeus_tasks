@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <script src="typescript/login.js"></script>
+    <title>Quantum</title>
+</head>
+
+<body>
+
+    <div class="header ">
+        <img src="img/QuantumLogo.svg"  alt="Quantum Logo">
+    </div>
+    <div class="container">
+        <div class="container-of-header">
+            <a href="" id="ancor-back"><img id="Back" src="icons/back.svg" alt="" srcset=""></a> 
+            <h2 id="login-head">Log in with Quantum</h2>
+        </div>
+        <form action="">
+            <ul id="radio-set">
+                <li class="selected" id="radio-btn-1" onclick="radioToggel1()">District</li>
+                <li id="radio-btn-2" onclick="radioToggel2()">Independent school</li>
+            </ul>
+            <div class="location-selector">
+
+                <label for="state" class="label-dropdown">State*</label>
+                <select value="state" name="state">
+                    <option value="s1">Alabama</option>
+                    <option value="s1">Ohio</option>
+                    <option value="s1">Alaska</option>
+                </select>
+
+                <label for="District" class="label-dropdown">District*</label>
+                <select value="District" name="District">
+                    <option value="s1">Albama School District</option>
+                    <option value="s1">Autauga School District</option>
+                    <option value="s1">Athens city School District</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <input type="text" name="UserName" class="user-name" id="UserName" placeholder="Username/Email ID">
+                <a href=""><p class="username">FORGOT USERNAME?</p></a> 
+                <input type="password"  class="password" id="my-password" placeholder="Password">
+                <img id="preview"  onclick="showPassword()" src="icons/preview.svg" alt="">
+                <a href=""><p class="username">FORGOT PASSWORD?</p></a> 
+            </div>
+            <div class="remember">
+                <img src="icons/checkbox-checked.svg" onclick="rememberMe()" alt="checked" class="pass-checked" id="pass-checked">
+                <p id="remember">Remember Me</p>
+            </div>
+            <div class="button">
+            <input type="submit" id="login-button" value="LOG IN">
+        </div>
+
+
+
+        </form>
+
+    </div>
+
+    <div class="About">
+        <a href="" class="about-contact" ><p class="abbout green-color">About</p></a>
+        <p class="line">|</p>
+        <a href="" class="about-contact"><p class="contact green-color">Contact Us</p></a>
+    </div>
+    <footer>
+
+    <div class="footer">
+        <img src="icons/logo used in footer.svg" alt="">
+        <p class="line footer-font">|</p>
+        <p class="Copyright footer-font">Copyright &#169; 2020-2021</p>
+        <p class="footer-name ">Zeus Systems Pvt.LTD</p>
+        <p class="ATR footer-font">All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>

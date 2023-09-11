@@ -1,0 +1,203 @@
+
+body{
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+}
+.header{
+    background-image: url("img/headerPattern.png");
+    background-color: black;
+    padding: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-bottom: 2px solid rgb(0, 227, 243);
+}
+.container{
+    width: 550px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-top: 4px solid rgb(0, 227, 243) ;
+
+}
+.container-of-header{
+    display: flex;
+    font-family: 'Quicksand';
+    font-size: 17px;
+
+
+}
+#Back{
+    margin-left: 20px;
+}
+#login-head{
+    margin-left: 110px;
+
+}
+
+#ancor-back{
+    display: flex;
+}
+ul li{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 17px;
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: inline;
+
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(icons/radio-button-off.svg);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 16px;
+
+
+}
+ul li.selected::before{
+    background-image: url(icons/radio-button-on.svg);
+ }
+ #radio-set{
+    margin-left: -34px;
+
+ }
+ .label-dropdown{
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 14px;
+ }
+ .location-selector{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 22px;
+ }
+ select{
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(216, 215, 215);
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 17px;
+
+ }
+ .user-name, .password{
+    border: none;
+    border-bottom: 2px solid rgb(216, 215, 215);
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 17px;
+
+ }
+.input-box{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 22px;
+}
+p.username{
+    text-align: end;
+    margin-top: 4px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    color: #1F7A54;
+    font-size: 15px;
+}
+#preview{
+    width: 26px;
+    margin-top: -26px;
+    margin-left: 476px;
+    cursor: pointer;
+}
+.remember{
+    display: flex;
+    margin-left: 22px;
+    margin-top: -10px;
+
+}
+#remember{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 3px;
+
+}
+#login-button{
+    border: none;
+    padding: 10px 92px;
+    background-color: #3FD28B;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    align-items: center;
+    font-size: 17px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    cursor: pointer;
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.footer-font{
+    font-family: 'Quicksand';
+    font-weight: 400;
+    padding: 0 10px;
+
+}
+.footer-name{
+    font-family: 'Quicksand';
+    font-weight: 600;
+
+}
+.footer{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #E0E1E1;
+
+}
+.About{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.green-color{
+    color: #1F7A54;
+    padding: 0 10px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+}
+
+.pass-checked{
+    cursor: pointer;
+
+}
+
+a{
+    text-decoration: none;
+}
+

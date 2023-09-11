@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="courses.js"></script>
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="" id="logo"> <img src="img/QuantumLogo.svg" alt="Quantum Logo"></a>
+        <ul class="NavBar">
+            <div class="nav">
+                <div class="topNav">
+                    <li class="selected nav-list"><a href="">DASHBOARD</a></li>
+                    <li class="nav-list"><a href="">CONTENT</a></li>
+                    <li class="nav-list"><a href="">USERS </a> </li>
+                    <li class="nav-list"><a href="">REPORTS </a> </li>
+                    <li class="nav-list"><a href="">ADMIN </a> </li>
+                </div>
+                <div class="navIcons">
+                    <li class="alert-image nav-list" onmouseenter="showAlert()" onmouseleave="hideAlert()"><img src="icons/alerts.svg" class="alert-image" alt=""><span
+                            class="count">2</span>
+                        <div class="alerts hide" onmouseenter="showAlertList()" onmouseleave="hideAlertList()">
+
+                            <ul>
+                       
+
+
+                                <li>
+                                    <span class="checkmark abort"></span>
+                                    <p class="alert-title">License for Introduction to Algebra has been assigned to your
+                                        school</p>
+                                    <p class="date">15-Sep-2018 at 07:21 pm</p>
+                                </li>
+                                <li>
+                                    <span class="checkmark"></span>
+                                    <p class="alert-title">Lesson 3 Practice Worksheet overdue for Amy Santiago</p>
+                                    <p class="alert-course">Course: <span class="li-alert-subject">Advanced
+                                            Mathematics</span></p>
+                                    <p class="date">15-Sep-2018 at 07:21 pm</p>
+                                </li>
+                                <li>
+                                    <span class="checkmark abort"></span>
+                                    <p class="alert-title">23 new students created</p>
+                                    <p class="date">15-Sep-2018 at 07:21 pm</p>
+                                </li>
+                                <li>
+                                    <span class="checkmark abort"></span>
+                                    <p class="alert-title">15 submissions ready for evaluation</p>
+                                    <p class="alert-course">Course: <span class="li-alert-subject">Basics of
+                                            Algebra</span></p>
+                                    <p class="date">15-Sep-2018 at 07:21 pm</p>
+                                </li>
+                                <li>
+                                    <span class="checkmark abort"></span>
+                                    <p class="alert-title">License for Basic Concepts in Geometry has been assigned to
+                                        your...</p>
+                                    <p class="date">15-Sep-2018 at 07:21 pm</p>
+                                </li>
+                                <li>
+                                    <span class="checkmark"></span>
+                                    <p class="alert-title">Lesson 3 Practice Worksheet overdue for Sam Diego</p>
+                                    <p class="alert-course">Course: <span class="li-alert-subject">Advanced
+                                            Mathematics</span></p>
+                                    <p class="date">15-Sep-2018 at 07:21 pm</p>
+                                </li>
+
+                            </ul>
+                            <button class="preview-alerts">Show All</button>
+
+                        </div>
+                    </li>
+                    <li class="nav-list" onmouseenter="showAnnouncements()" onmouseleave="hideAnnouncements()"><img src="icons/announcements.svg" alt=""><span class="count">1</span>
+                        <div class="announcements hide"  onmouseenter="showAnnouncementsList()" onmouseleave="hideAnnouncementsList()">
+
+                            <ul>
+                    
+                  
+                              <li>
+                                <span class="checkmark" onclick="tooglecheckmark(this)"></span>
+                                <p class="user">PA: <span>Wilson Kumar</span></p>
+                                <p class="announcement-title">No classes will be held on 21st Nov</p>
+                                <div class="date-panel">
+                                  <p class="attachments"> 2 files are attached</p>
+                                  <p class="date">15-Sep-2018 at 07:21 pm</p>
+                  
+                                </div>
+                              </li>
+                              <li>
+                                <span class="checkmark abort" onclick="tooglecheckmark(this)"></span>
+                                <p class="user">PA: <span>Samson White</span></p>
+                                <p class="announcement-title">Guest lecture on Geometry on 20th September</p>
+                                <div class="date-panel">
+                                  <p class="attachments"> 2 files are attached</p>
+                                  <p class="date">15-Sep-2018 at 07:21 pm</p>
+                                </div>
+                              </li>
+                              <li>
+                                <span class="checkmark" onclick="tooglecheckmark(this)"></span>
+                                <p class="user">PA: <span>Wilson Kumar</span></p>
+                                <p class="announcement-title">Additional course materials available on request</p>
+                                <p class="course alert-course">Course: Mathematics 101</p>
+                                <div class="date-panel">
+                                    <p class="attachments">&nbsp; </p>
+                                  <p class="date  ">15-Sep-2018 at 07:21 pm</p>
+                  
+                                </div>
+                              </li>
+                              <li>
+                                <span class="checkmark" onclick="tooglecheckmark(this)"></span>
+                                <p class="user">PA: <span>Wilson Kumar</span></p>
+                                <p class="announcement-title">No classes will be held on 25th Dec</p>
+                                <div class="date-panel">
+                                    <p class="attachments">&nbsp; </p>
+                                  <p class="date ">15-Sep-2018 at 07:21 pm</p>
+                  
+                                </div>
+                              </li>
+                              <li>
+                                <span class="checkmark abort" onclick="tooglecheckmark(this)"></span>
+                                <p class="user">PA: <span>Wilson Kumar</span></p>
+                                <p class="announcement-title">Additional course materials available on request</p>
+                                <p class="course alert-course">Course: Mathematics 101</p>
+                                <div class="date-panel">
+                                  <p class="attachments"> 2 files are attached</p>
+                                  <p class="date">15-Sep-2018 at 07:21 pm</p>
+                  
+                                </div>
+                              </li>
+                  
+                            </ul>
+                            <button class="preview-announcements">Show All</button>
+                            <button class="create-announcements">CREATE NEW</button>
+                  
+                          </div>
+                    </li>
+                    <li class="nav-list"><img id="profile-photo" src="img/mosh.jpg" alt=""><span
+                            class="profile">T</span> </li>
+                    <li class="ham nav-list navbar-toggler" onmouseenter="showNav()" onmouseleave="hideNav()"><img
+                            src="icons/hamburger-menu.svg" alt=""></li>
+                </div>
+            </div>
+        </ul>
+
+    </div>
+    <ul class="navbar-nav hide " onmouseenter="showNavList()" onmouseleave="hideNavList()" id="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">DASHBOARD</a>
+        </li>
+        <li class="nav-item dropdown " onclick="show1()">
+            <a class="nav-link" href="#">CONTENT <img class="dropdown-arrow" src=icons/dropdownarrow.png"
+                    alt=""></a>
+            <ul class="nav-dropdown hide " id="content">
+                <li>COURSE CATALOG</li>
+                <li>COURSE CATALOG</li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown " onclick="show2()">
+            <a class="nav-link" href="#">USERS <img class="dropdown-arrow" src="icons/dropdownarrow.png"
+                    alt=""></a>
+            <ul class="nav-dropdown hide " id="user">
+                <li>COURSE CATALOG</li>
+                <li>COURSE CATALOG</li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown" onclick="show3()">
+            <a class="nav-link" href="#">REPORTS <img class="dropdown-arrow" src="icons/dropdownarrow.png"
+                    alt=""></a>
+            <ul class="nav-dropdown hide" id="reports">
+                <li>COURSE CATALOG</li>
+                <li>COURSE CATALOG</li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown" onclick="show4()">
+            <a class="nav-link" href="#">ADMIN <img class="dropdown-arrow" src="icons/dropdownarrow.png"
+                    alt=""></a>
+            <ul class="nav-dropdown hide " id="admin">
+                <li>COURSE CATALOG</li>
+                <li>COURSE CATALOG</li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+    <div class="courses-classes">
+        <div class="courses">
+            <img class="pad5" src="icons/courses.svg" alt="">
+            <p class="course-c pad5" id="number">4</p>
+            <p class="course pad5">Courses</p>
+        </div>
+        <div class="classes">
+            <img class="classimage pad5" src="icons/classes.svg" alt="">
+            <p class="class-c pad5" id="number">4</p>
+            <p class="course pad5">Classes</p>
+        </div>
+    </div>
+    <div class="textC">
+
+        <p class="textCount">Showing 4 of 4 courses</p>
+        <span class="sort">
+            <label for="state" class="textCount">Sort By</label>
+            <select class="sortDropdown" value="state" name="state">
+                <option value="s1">Course Name</option>
+                <option value="s1">Course Id</option>
+                <option value="s1">Teacher</option>
+            </select>
+            <img class="sortImage" src="icons/sort.svg" alt="">
+        </span>
+    </div>
+    <div class="course-container" id="course-container">
+
+    </div>
+
+    <div class="About">
+        <a href="">
+            <p class="abbout greencolorFoot">About</p>
+        </a>
+        <p class="line">|</p>
+        <a href="">
+            <p class="contact greencolorFoot">Contact Us</p>
+        </a>
+    </div>
+    <footer>
+
+        <div class="footer">
+            <img src="icons/logo used in footer.svg" alt="">
+            <p class="line footerfont">|</p>
+            <p class="Copyright footerfont">Copyright &#169; 2020-2021</p>
+            <p class="footer-name ">Zeus Systems Pvt.LTD</p>
+            <p class="ATR footerfont">All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="typescript/dashboard.js"></script>
+
+</html>
